@@ -1,10 +1,19 @@
 services:
+
   web1:
     image: web1
     network_mode: "host"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://0.0.0.0:5001
+
   web2:
     image: web2
     network_mode: "host"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://0.0.0.0:5002
+
   nginx:
     image: nginx:1.27-alpine
     network_mode: "host"
