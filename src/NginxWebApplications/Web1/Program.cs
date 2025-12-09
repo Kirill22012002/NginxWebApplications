@@ -11,6 +11,9 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+app.UsePathBase("/web1");
+app.UseForwardedHeaders();
+
 app.MapDefaultEndpoints();
 
 // Configure the HTTP request pipeline.
