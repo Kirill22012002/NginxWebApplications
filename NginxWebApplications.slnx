@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="src/NginxWebApplications/NginxWebApplications.AppHost/NginxWebApplications.AppHost.csproj" />
+  <Project Path="src/NginxWebApplications/NginxWebApplications.ServiceDefaults/NginxWebApplications.ServiceDefaults.csproj" />
+  <Project Path="src/NginxWebApplications/Web1/Web1.csproj" />
+  <Project Path="src/NginxWebApplications/Web2/Web2.csproj" />
+</Solution>
