@@ -48,3 +48,9 @@ openssl pkcs12 -export -out domain.pfx -inkey domain.key -in domain.crt
 `
 123edcxzse4
 `
+
+
+## check certs in nginx container
+`
+docker exec -it nginxwebapplications-nginx-1 sh -c "ls -l /etc/nginx/certs"
+`
