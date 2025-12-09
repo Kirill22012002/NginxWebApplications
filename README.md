@@ -10,7 +10,7 @@
 
 # 3 step
 `
-load_images.bat
+.\load_images.bat
 `
 
 # 4 step 
