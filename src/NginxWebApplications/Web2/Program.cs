@@ -43,6 +43,19 @@ app.MapGet("/api/test-data", () =>
     return Results.Ok(data);
 });
 
+app.MapPost("/api/login", (LoginRequest request) =>
+{
+    var user = string.IsNullOrWhiteSpace(request.Username) ? "guest" : request.Username.Trim();
+
+    return Results.Ok(new
+    {
+        message = $"Hello, {user}! You are logged in via Web2.",
+        time = DateTimeOffset.UtcNow
+    });
+});
+
 app.MapFallbackToFile("/index.html");
 
 app.Run();
+
+public record LoginRequest(string? Username, string? Password);
