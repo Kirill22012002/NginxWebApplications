@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="wwwroot\**" CopyToPublishDirectory="PreserveNewest" />
+    <Content Update="wwwroot\**" CopyToPublishDirectory="PreserveNewest" />
   </ItemGroup>
 
   <ItemGroup>
